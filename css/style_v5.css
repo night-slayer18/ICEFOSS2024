@@ -74,10 +74,10 @@ a {
 }
 
 .section-left{
-  background-color: #1C0531 !important
+  background-color: #8f6eff !important
 }
 .section-right{
- background-color: #280649 !important
+ background-color: #0238e8 !important
 }
 
 a:hover {
@@ -8596,7 +8596,30 @@ Page-navigation Area Style*/
 }
 
 .body-with-black-color {
-  background-color: #1C0531;
+  background: repeating-linear-gradient(
+    135deg,
+    #8f6eff ,
+    #0238e8 5%,
+    #22dffe 10%,
+    #22dffe 15%,
+    #0238e8 20%,
+    #0238e8 25%,
+    #8f6eff 30%,
+    #8f6eff 35%,
+    #22dffe 40%,
+    #22dffe 45%,
+    #0238e8 50%,
+    #8f6eff 55%,
+    #8f6eff 60%,
+    #22dffe 65%,
+    #22dffe 70%,
+    #0238e8 75%,
+    #0238e8 80%,
+    #8f6eff 85%,
+    #8f6eff 90%,
+    #22dffe 95%,
+    #22dffe 100%
+  );
 }
 
 .body-with-black-color .section-title h2 {
