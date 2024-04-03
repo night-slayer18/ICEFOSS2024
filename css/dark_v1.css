@@ -30,7 +30,7 @@ Default CSS
 .theme-dark .mean-container .mean-bar{
   background: #222121;
 }
-.switch-box .switch {
+/* .switch-box .switch {
   position: relative;
   display: inline-block;
   width: 35px;
@@ -96,7 +96,7 @@ Default CSS
 
 .switch-box .slider.round:before {
   border-radius: 50%;
-}
+} */
 
 .theme-dark body {
   background-color: #000000;
