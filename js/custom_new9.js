@@ -4,10 +4,7 @@ function scrollthere(item, event) {
 
   element.scrollIntoView();
 
-  
-  $(".meanmenu-reveal").trigger('click')
-
-
+  $(".meanmenu-reveal").trigger("click");
 }
 
 (function ($) {
@@ -24,7 +21,7 @@ function scrollthere(item, event) {
 
   //Forms Loader
   $(async function () {
-    let html_start = `<div class="row mt-5 gy-3 justify-content-center">`
+    let html_start = `<div class="row mt-5 gy-3 justify-content-center">`;
 
     await fetch(
       "https://apiservices.geekstudios.tech/hackfit/auth/registration-status",
@@ -42,10 +39,10 @@ function scrollthere(item, event) {
       })
       .then((data) => {
         if (data.response_code == 200) {
-          console.log(data.response)
+          console.log(data.response);
           let num = 0;
           if (data.response.hackathon.status) {
-            $(".hackfit-btn").attr("href",data.response.hackathon.url)
+            $(".hackfit-btn").attr("href", data.response.hackathon.url);
             html_start += `<div class="col-md-4 ">
 						<a href="${data.response.hackathon.url}">
 							<div class="card p-4" role="button">
@@ -60,9 +57,9 @@ function scrollthere(item, event) {
 					</div>`;
             num += 1;
           }
-          
+
           if (data.response.prompt_engineering.status) {
-            $('.promptly-').attr("href",data.response.prompt_engineering.url)
+            $(".promptly-").attr("href", data.response.prompt_engineering.url);
             html_start += `<div class="col-md-4">
 						<a href="${data.response.prompt_engineering.url}">
 						<div class="card p-4" role="button">
@@ -76,7 +73,7 @@ function scrollthere(item, event) {
             num += 1;
           }
           if (data.response.workshop.rust.status) {
-            $('.rust-btn').attr("href",data.response.workshop.rust.url)
+            $(".rust-btn").attr("href", data.response.workshop.rust.url);
             html_start += `<div class="col-md-4">
 						<a href="${data.response.workshop.rust.url}">
 						<div class="card p-4" role="button">
@@ -91,7 +88,7 @@ function scrollthere(item, event) {
           }
           if (data.response.workshop.ar.status) {
             // console.log(data.response)
-            $(".ar-btn").attr("href",data.response.workshop.ar.url)
+            $(".ar-btn").attr("href", data.response.workshop.ar.url);
             html_start += `<div class="col-md-4">
 						<a href="${data.response.workshop.ar.url}">
 							<div class="card p-4" role="button">
@@ -106,7 +103,7 @@ function scrollthere(item, event) {
           }
           if (data.response.workshop.go.status) {
             // console.log(data.response)
-            $(".go-btn").attr("href",data.response.workshop.go.url)
+            $(".go-btn").attr("href", data.response.workshop.go.url);
             html_start += `<div class="col-md-4">
 						<a href="${data.response.workshop.go.url}">
 							<div class="card p-4" role="button">
@@ -121,7 +118,7 @@ function scrollthere(item, event) {
           }
           if (data.response.workshop.devops.status) {
             // console.log(data.response)
-            $(".devops-btn").attr("href",data.response.workshop.devops.url)
+            $(".devops-btn").attr("href", data.response.workshop.devops.url);
             html_start += `<div class="col-md-4">
 						<a href="${data.response.workshop.devops.url}">
 							<div class="card p-4" role="button">
@@ -136,7 +133,7 @@ function scrollthere(item, event) {
           }
           if (data.response.workshop.web.status) {
             // console.log(data.response)
-            $(".web-btn").attr("href",data.response.workshop.web.url)
+            $(".web-btn").attr("href", data.response.workshop.web.url);
             html_start += `<div class="col-md-4">
 						<a href="${data.response.workshop.web.url}">
 							<div class="card p-4" role="button">
@@ -151,7 +148,7 @@ function scrollthere(item, event) {
           }
           if (data.response.workshop.flutter.status) {
             // console.log(data.response)
-            $(".flutter-btn").attr("href",data.response.workshop.flutter.url)
+            $(".flutter-btn").attr("href", data.response.workshop.flutter.url);
             html_start += `<div class="col-md-4">
 						<a href="${data.response.workshop.flutter.url}">
 							<div class="card p-4" role="button">
@@ -164,11 +161,12 @@ function scrollthere(item, event) {
 					</div>`;
             num += 1;
           }
-					if(num == 0){
-						html_start += '<h4 style="color: #fff;">Sorry, Registration Closed 😢</h4>'
-					}
-					html_start += '</div>'
-					$("#registrationForms").html(html_start);
+          if (num == 0) {
+            html_start +=
+              '<h4 style="color: #fff;">Sorry, Registration Closed 😢</h4>';
+          }
+          html_start += "</div>";
+          $("#registrationForms").html(html_start);
         }
       });
   });
@@ -626,64 +624,64 @@ function scrollthere(item, event) {
 
   const resourcePerson = [
     {
-      git : "https://github.com/mohitrajane/",
+      git: "https://github.com/mohitrajane/",
       link: "https://www.linkedin.com/in/mohit-rajan-e-756412160",
       img: "mohith.jpeg",
       name: "Mohit Rajan",
       role: "Web Development",
-      desg:"Software Engineer<br>BigBinary"
+      desg: "Software Engineer<br>BigBinary",
     },
     {
-      git : "",
+      git: "",
       link: "https://www.linkedin.com/in/nandinimenon/",
       img: "nandhini1.jpeg",
       name: "Nandihi Menon",
       role: "Web Development",
-      desg:"Commvault Systems"
+      desg: "Commvault Systems",
     },
     {
-      git : "",
+      git: "",
       link: "https://www.linkedin.com/in/nino-joy",
       img: "ninno.jpeg",
       name: "Nino Joy",
       role: "Flutter",
-      desg:"Trainee Software Eng.<br>White Rabbit Group Inc"
+      desg: "Trainee Software Eng.<br>White Rabbit Group Inc",
     },
     {
-      git : "",
+      git: "",
       link: "https://www.linkedin.com/in/dev-aravind-502a10ba",
       img: "aravind.jpeg",
       name: "Dev Aravind",
       role: "Go Lang",
-      desg:"Software Engineer<br>Dexlock"
+      desg: "Software Engineer<br>Dexlock",
     },
     {
-      git : "",
+      git: "",
       link: "https://www.linkedin.com/in/divyendh-suresh-09a4781b3/",
       img: "divyendh.jpeg",
       name: "Divyendh Suresh",
       role: "DevOps",
-      desg:"DevOps Engineer"
+      desg: "DevOps Engineer",
     },
     {
-      git : "",
+      git: "",
       link: "https://www.linkedin.com/in/ben24jp/",
       img: "benjamin.jpg",
       name: "Benjamin James",
       role: "Rust",
-      desg:"Design Engineer<br>Digital Core Technologies"
+      desg: "Design Engineer<br>Digital Core Technologies",
     },
     {
-      git : "",
+      git: "",
       link: "https://www.linkedin.com/in/akarsh-ashok/",
       img: "ar_mentor.jpeg",
       name: "Akarsh Ashok",
       role: "AR",
-      desg:"Mentor,XTrudAR<br>Community"
+      desg: "Mentor,XTrudAR<br>Community",
     },
-  ]
+  ];
 
-  resourcePerson.map( e=>{
+  resourcePerson.map((e) => {
     $("#resourcePerson .teachers-pag .container .row").append(`
     <div class="col-md-4 col-sm-6 teachers-col  ">
                                         <div class="single-teacher mt-80 text-center mx-auto" >
@@ -706,8 +704,8 @@ function scrollthere(item, event) {
                                             </div>
                                         </div>
                                     </div>
-    `)
-})
+    `);
+  });
 
   // Testimonials Slider JS
   $(".testimonials-slider").owlCarousel({
@@ -928,9 +926,10 @@ function scrollthere(item, event) {
   // $('body').append("<a href='https://themeforest.net/checkout/from_item/27089732?license=regular&support=bundle_6month&_ga=2.221410840.1657781501.1653794352-1356931366.1645330919' target='_blank' class='buy-now-btn'><img src='assets/img/envato.png' alt='envato'/>Buy Now</a>");
 
   // Switch Btn
-  $("body").append(
+  $("body")
+    .append
     // "<div class='switch-box'><label id='switch' class='switch'><input type='checkbox' onchange='toggleTheme()' id='slider'><span class='slider round'></span></label></div>"
-  );
+    ();
 })(jQuery);
 
 // function to set a given theme/color-scheme
@@ -952,7 +951,6 @@ function toggleTheme() {
   if (localStorage.getItem("seku_theme") === "theme-light") {
     setTheme("theme-light");
     document.getElementById("slider").checked = true;
-    
   } else {
     setTheme("theme-dark");
     document.getElementById("slider").checked = false;
