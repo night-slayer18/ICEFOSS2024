@@ -8598,27 +8598,25 @@ Page-navigation Area Style*/
 .body-with-black-color {
   background: repeating-linear-gradient(
     135deg,
-    #8f6eff ,
-    #0238e8 5%,
-    #22dffe 10%,
-    #22dffe 15%,
-    #0238e8 20%,
+    #0238e8 ,
+    #8f6eff 5%,
+    #8f6eff 20%,
     #0238e8 25%,
     #8f6eff 30%,
-    #8f6eff 35%,
-    #22dffe 40%,
-    #22dffe 45%,
-    #0238e8 50%,
-    #8f6eff 55%,
+    #0238e8 35%,
+    #8f6eff 40%,
+    #0238e8 45%,
+    #8f6eff 50%,
+    #0238e8 55%,
     #8f6eff 60%,
-    #22dffe 65%,
-    #22dffe 70%,
+    #0238e8 65%,
+    #8f6eff 70%,
     #0238e8 75%,
-    #0238e8 80%,
-    #8f6eff 85%,
+    #8f6eff 80%,
+    #0238e8 85%,
     #8f6eff 90%,
     #22dffe 95%,
-    #22dffe 100%
+    #8f6eff 100%
   );
 }
 
