@@ -11436,4 +11436,8 @@ Cyber Defenses Area CSS
           transform: translateY(-10%);
   z-index: -1;
 }
+
+.hackfitNewLogo{
+  transform: scale(0.7);
+}
 /*# sourceMappingURL=style.css.map */
