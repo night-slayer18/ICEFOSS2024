@@ -11354,15 +11354,15 @@ Cyber Defenses Area CSS
   color: #ffffff;
 }
 
-.nav-link.active{
-  color: #39e8f5;;
-}
-
-
 
 .cyber-defenses-list-tabs .nav .nav-item .nav-link:hover::before, .cyber-defenses-list-tabs .nav .nav-item .nav-link.active::before {
   height: 100%;
 }
+
+.nav-link.active,.nav-link:hover{
+  color: #39e8f5 !important;
+}
+
 
 .cyber-defenses-content {
   max-width: 550px;
@@ -11525,3 +11525,6 @@ Cyber Defenses Area CSS
   transition: bottom ease-in-out 0.4s;
 }
 
+.newNavLink:hover{
+  color: #39e8f5 !important;
+}

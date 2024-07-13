@@ -1,10 +1,9 @@
 function scrollthere(item, event) {
-  console.log(event);
   var element = document.querySelector(`#${item}`);
 
   element.scrollIntoView();
 
-  $(".meanmenu-reveal").trigger("click");
+  // $(".meanmenu-reveal").trigger("click");
 }
 
 (function ($) {
